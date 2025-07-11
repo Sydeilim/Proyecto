@@ -1,0 +1,205 @@
+html {
+  scroll-padding-top: 120px; /* el alto del header fijo */
+}
+/* Fuente predeterminada del sitio */
+body {
+  font-family: 'Roboto', sans-serif; /* Fuente importada desde Google Fonts */
+  margin: 0;                          /* Elimina márgenes del navegador */
+  padding: 0;                         /* Elimina relleno por defecto */
+}
+
+/* Estilo para el encabezado de la página */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* para que esté encima de otros elementos */
+}
+.contenedor-encabezado {
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 0 20px;     /* por ejemplo */ 
+  background-color: #e6deed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+/*Estilo para el nombre del sitio*/
+h1 {
+  font-weight: bold;
+}
+.part-uno {
+  color: #8b61c2;
+  font-family: 'Hanken Grotesk', 'Schibsted Grotesk';
+}
+.part-dos {
+  color: #159c95;
+  font-family: 'Source Serif 4', 'Source Sans 3';
+}
+
+.contendedor-icono-carrito {
+  padding: 10px;
+}
+
+.icono-carrito {
+  color: #8b61c2; /* Color del icono */
+  font-size: 24px; /* Tamaño del icono */
+  text-decoration: none; /* Sin subrayado */
+}
+
+/*Estilo para contener el nombre del sitio*/
+.container-nombre-sitio-web {
+  display: flex;
+  gap: 0;
+  justify-content: center;
+}
+.container-nombre-sitio-web a {
+  text-decoration: none; 
+}
+.container-nombre-sitio-web img {
+  height: 85px;
+  width: 80px;
+} 
+
+/* Navegación en forma de lista horizontal */
+nav {
+  padding: 5px;
+  background-color: #8b61c2;
+  margin-top:0;
+  width: 100vw;/*83.2em;98.5%;*/ 
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;          /* Elimina viñetas */
+  padding: 0;                /* Elimina relleno */
+  display: flex;             /* Activa Flexbox */
+  justify-content: center;   /* Centra los elementos horizontalmente */
+  gap: 20px;                 /* Espacio entre los ítems de la lista */
+}
+
+/* Enlaces del menú */
+nav ul li a {
+  color: white;            /* Texto blanco */
+  text-decoration: none;     /* Sin subrayado */
+  font-weight: bold;         /* Negrita */
+}
+
+h2 {
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
+  background-color: #8b61c2;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+}
+
+main {
+  padding-top: 150px; /*Compensa el espacio ocupado por el header fijo */
+}
+
+/* Estilo general para todas las secciones */
+section {
+  padding: 10px;             /* Espacio interior */
+}
+
+/* Contenedor de los productos con Flexbox */
+.contenedor-productos {
+  max-width: 100vw;         /* límite de ancho visible */
+  display: flex;             /* Activa Flexbox */
+  justify-content: center;   /* Centra horizontalmente */
+  gap: 10px;                 /* Espacio entre productos */
+  flex-wrap: wrap;           /*Permite que bajen a otra línea en pantallas pequeñas */
+}
+
+.producto {
+    background: #d3d3d3; /* Fondo claro */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    border-style: outset;
+    text-align: center; /* Texto centrado */
+}
+
+.producto img {
+  width: 150px;              /* Ancho fijo */
+  height: 150px;             /* Alto fijo */
+  object-fit: cover;         /* Cubre el área sin deformarse */
+}
+
+.titulo-producto {
+  margin-bottom: 10px; /* Espacio inferior */
+}
+
+/* Botones del sitio*/
+button {
+  padding: 10px;             /* Espacio interior */
+  background-color: #159c95; /* Fondo verde */
+  color: white;              /* Texto blanco */
+  border: none;              /* Sin borde */
+  border-radius: 4px;        /* Bordes redondeados */
+  border-style: outset;
+  cursor: pointer;           /* Cambia el cursor al pasar por encima */
+  font-weight: bold;
+}
+.producto button:hover {
+  background: #555; /* Cambio de color al pasar el cursor */
+}
+
+/* Estilo para el pie de página */
+footer {
+  background-color: #8b61c2;    
+  color: white;              /* Texto blanco */
+  text-align: center;        /* Centrado de texto */
+  padding: 15px;             /* Espacio interior */
+  margin-top: 30px;          /* Separación del contenido anterior */
+  margin-bottom: 0;
+}
+
+/* ------------------ MEDIA QUERIES ------------------ */
+/* Media Query para CELULARES (pantallas pequeñas, hasta 600px) */
+@media (max-width: 600px){
+  html {
+    scroll-padding-top: 180px; /* el alto de tu header fijo */
+  }
+  nav ul {
+    flex-direction: column;  /* Muestra los enlaces uno debajo del otro */
+    align-items: center;
+    gap: 6px;               /* Menor espacio entre ellos */
+  }
+
+  main {
+    padding-top: 180px; /* Compensa el espacio ocupado por el header fijo */
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* centra horizontalmente */
+    margin-top: 10px;
+  }
+  .contenedor-productos {
+    flex-wrap: nowrap;
+    overflow-x: auto;          /* activa scroll horizontal si se desborda */
+    overflow-y: hidden;
+  }
+}
+
+/* Media Query para TABLETS (de 601px a 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* centra horizontalmente */
+    margin-top: 10px;
+  }
+  .contenedor-productos {
+    flex-wrap: nowrap;
+    overflow-x: auto;          /* activa scroll horizontal si se desborda */
+    overflow-y: hidden;
+  }
+}

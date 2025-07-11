@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- Indica el tipo de documento HTML -->
+<html lang="es"> <!-- El idioma principal del contenido es español -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Establece la codificación de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que el sitio sea responsive -->
+  <title>Carrito</title> <!-- Título que se muestra en la pestaña del navegador -->
+  
+  <link rel="shortcut icon" href="./img/store_books_pestana.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css"> <!-- Vincula la hoja de estilos externa -->
+  <link rel="stylesheet" href="../css/carrito.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Fuente Roboto desde Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="pagina">
+  <!-- Encabezado principal del sitio -->
+  <header>
+      <div class="contenedor-encabezado">
+        <div class="container-nombre-sitio-web"> <!-- class="container-nombre-sitio-web" -->
+          <img src="../img/image-bolsas-sin-fondo.png" alt="imagen_bolsas_sitio" >
+          <h1> <!-- Título del sitio web -->
+            <a href="index.html">
+              <span class="part-uno">My</span> 
+              <span class="part-dos">Ecommerce</span>   
+            </a>     
+          </h1> 
+        </div>
+      
+        <div class="contendedor-icono-carrito">
+          <a href="#carrito" class="icono-carrito">🛒 <span id="contador-carrito">0</span></a>
+        </div>
+      </div>
+
+      <nav> <!-- Navegación principal -->
+        <ul>
+          <li><a href="../index.html#belleza">Belleza</a></li> <!-- Enlace a la sección de productos de belleza -->
+          <li><a href="../index.html#fragancias">Fragancias</a></li> <!-- Enlace a la sección de productos de fraancias -->
+          <li><a href="../index.html#cuidado-personal">Cuidado de Personal</a></li> <!--Enlace a la sección de productos de ciudado personal-->
+        </ul>
+      </nav>
+    </header>
+  
+    <!-- Contenido principal del sitio -->
+    <main>
+      <!-- Sección de bienvenida -->
+        <!-- Seccion principal del carrito -->
+      <section id="carrito" class="productos">
+          <h2>Tu carrito</h2>
+
+          <div class="contenedor-productos" id="lista-carrito">
+              <!-- Lista de productos -->
+          </div>
+
+          <div id="acciones-carrito"> 
+            <!-- Botones del carrito -->
+          </div>
+
+          <!-- Seccion de resumen del carrito -->
+          <div id="resumen-carrito">
+              <p>Total de productos: <span id="total-productos">0</span></p>
+              <p>Importe total: $<span id="importe-total">0</span></p>
+          </div>
+      </section>
+
+    <!-- Pie de página -->
+    <footer>
+      <p>&copy; 2025 Mi Sitio Web</p> <!-- Derechos de autor -->
+    </footer>
+  </div>
+  <script src="../js/carrito.js"></script>
+</body>
+
+</html>

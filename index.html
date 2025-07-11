@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- Indica el tipo de documento HTML -->
+<html lang="es"> <!-- El idioma principal del contenido es español -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Establece la codificación de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que el sitio sea responsive -->
+  <title>MyEcommerce</title> <!-- Título que se muestra en la pestaña del navegador -->
+  <link rel="shortcut icon" href="./img/image-bolsas.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css"> <!-- Vincula la hoja de estilos externa -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Fuente Roboto desde Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Encabezado principal del sitio --> 
+  <header>
+    <div class="contenedor-encabezado">
+      <div class="container-nombre-sitio-web"> <!-- class="container-nombre-sitio-web" -->
+        <img src="./img/image-bolsas-sin-fondo.png" alt="imagen_bolsas_sitio" >
+        <h1> <!-- Título del sitio web -->
+          <a href="index.html">
+            <span class="part-uno">My</span> 
+            <span class="part-dos">Ecommerce</span>   
+          </a>     
+        </h1> 
+      </div>
+    
+      <div class="contendedor-icono-carrito">
+        <a href="./pages/carrito.html" class="icono-carrito">🛒 <span id="contador-carrito">0</span></a>
+      </div>
+    </div>
+
+    <nav> <!-- Navegación principal -->
+      <ul>
+        <li><a href="#belleza">Belleza</a></li> <!-- Enlace a la sección de productos de belleza -->
+        <li><a href="#fragancias">Fragancias</a></li> <!-- Enlace a la sección de productos de fraancias -->
+        <li><a href="#cuidado-personal">Cuidado de Personal</a></li> <!--Enlace a la sección de productos de ciudado personal-->
+      </ul>
+    </nav>
+  </header>
+  
+
+  <!-- Contenido principal del sitio -->
+  <main>
+
+    <!-- Sección de Productos de Belleza -->
+    <section id="belleza">
+      <h2>Belleza</h2> <!-- Título de la sección -->
+      <div class="contenedor-productos" id="contenedor-productos-belleza"> <!-- Contenedor de productos --> </div>
+    </section>
+
+    <!-- Sección de Productos de Fragancias -->
+    <section id="fragancias">
+      <h2>Fragancias</h2> <!-- Título de la sección -->
+      <div class="contenedor-productos" id="contendor-productos-fragancias"> <!-- Contenedor de productos --> </div>
+    </section>
+
+    <!-- Sección de Productos de Cuidado Personal -->
+    <section id="cuidado-personal">
+      <h2>Cuidado personal</h2> <!-- Título de la sección -->
+      <div class="contenedor-productos" id="contendor-productos-cuidado-personal"> <!-- Contenedor de productos --> </div>
+    </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 Mi Sitio Web</p> <!-- Derechos de autor -->
+  </footer>
+
+  <script src="/js/index.js"></script>
+</body>
+
+</html>

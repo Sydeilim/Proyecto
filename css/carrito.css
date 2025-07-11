@@ -1,0 +1,14 @@
+.productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* centra horizontalmente */
+    align-items: center;
+}
+
+#acciones-carrito {
+    margin-top: 10px;
+}
+
+#resumen-carrito {
+    text-align: center;
+}
